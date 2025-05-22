@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
     <link rel="stylesheet" href="../css/edit_personal_information.css">
-    <?php
+    <script src="../js/edit_staff_information.js"></script>
+    <?
         include '../adminPages/admin_base_designs.php'; 
     ?>
 
       <!--START OF THE MAIN CONTENT-->
       <div class="content">
-        <form action="../server_side/post_edit_staff_information.php" method="POST">
+        <form action="../server_side/post_edit_staff_information.php" method="POST" id>
           <p class="title">Edit Personal Information</p>
           <!-- Hidden input to identify the form type -->
           <input type="hidden" name="form_type" value="update_information">
